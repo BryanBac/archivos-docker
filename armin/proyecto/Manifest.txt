@@ -1,0 +1,2 @@
+Main-Class: proyecto
+Class-Path: mysql-connector-java.jar

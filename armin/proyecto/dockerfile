@@ -1,0 +1,15 @@
+# Establece la imagen base
+FROM openjdk:11
+
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copia el archivo JAR al directorio de trabajo
+COPY Proyecto.jar .
+COPY mysql-connector-java.jar .
+
+# Define el comando de inicio del contenedor
+CMD ["java", "-jar", "Proyecto.jar"]
+
+# Expone el puerto si es necesario
+EXPOSE 3306
